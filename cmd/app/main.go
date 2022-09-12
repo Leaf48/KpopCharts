@@ -24,6 +24,7 @@ func main() {
 
 func checkBillboard(r *pkg.GroupsList) {
 	for {
+		// refresh every 10 hours
 		time.Sleep(time.Duration(10) * time.Hour)
 		log.Println("Billboard ranking has been updated!")
 		*r = pkg.Billboard()
