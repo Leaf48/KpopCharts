@@ -19,12 +19,12 @@ type (
 		Title string `json:"title"`
 	}
 
-	groupsList []Group
+	GroupsList []Group
 )
 
-var AllGroups groupsList
+var AllGroups GroupsList
 
-func Billboard() groupsList {
+func Billboard() GroupsList {
 
 	res, err := http.Get("https://www.billboard.com/charts/billboard-korea-100/")
 	if err != nil {
